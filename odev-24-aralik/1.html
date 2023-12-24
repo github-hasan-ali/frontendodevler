@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soru 1</title>
+    <script>
+      //1-Klavyeden girilecek X değerinden N değerine kadar tüm doğal sayıları listeleyen algoritmayı ve js kodunu yazınız.
+      function siralaN() {
+        do {
+          var x = parseInt(prompt("Başlangıç sayısı"));
+          if (isNaN(x) || x < 0) {
+            console.log("Geçerli bir doğal sayı giriniz.");
+          }
+        } while (isNaN(x) || x < 0);
+        do {
+          var N = parseInt(prompt("Bitiş sayısını giriniz"));
+          if (isNaN(N) || N < 1) {
+            console.log("Geçerli bir doğal sayı giriniz (1 veya daha büyük).");
+          }
+        } while (isNaN(N) || N < 1);
+        document.write(
+          "Belirtilen sayıdan", x , "başlayarak" , N , "sayısına kadar olan doğal sayılar: </br>"
+        );
+        for (i = x; i <= N; i++) {
+          document.write(i,"</br>");
+        }
+      }
+
+      siralaN();
+
+      // function siralaN() {
+      //   var x = parseInt(prompt("İlk sayi")), y=parseInt(prompt("ikinci sayi"));
+      //   for (i= x; i<=y; i++ ) {
+
+      //    console.log(i);
+      //  }
+      // do {
+      //   var x = prompt("İlk sayi");
+      //   parseFloat(x);
+      //   if (x<0) {
+      //     sonuc = false;
+      //   } else {
+      //     sonuc = true;
+      //   }
+      // } while (sonuc);
+
+      //         do {
+      //           var x = prompt("Birinci sayi giriniz");
+      //           if (isNan(x)) {
+      //             alert("Lütfen geçerli bir sayı giriniz")
+      //             y = false;
+      //           } else {
+      //             y = true;
+      //           }
+      //         } while (y);
+      // alert(x);
+      //x !== null && x.trim() !== "" && isNaN(x)
+      // do {
+      //   var y = prompt("İkinci sayiyi giriniz");
+      //   if (isNaN(y)) {
+      //     alert("Geçerli bir sayı giriniz");
+      //   }
+      // } while (isNaN(y) && x<y);
+
+      // y = prompt(" İlk girilen sayıdan büyük bir sayi giriniz")
+      // if (x<=0 && y<x ){}
+      // if (x<=0) {
+      //     alert("Lütfen geçeli bir pozitif sayı giriniz")
+      //     siralaN()
+      // } else {
+      //   var y = prompt("İlk girilen sayıdan büyük bir sayi giriniz");
+      //     if (y<x) {
+      //       y = prompt("lütfen ilk değerden büyük bir sayı giriniz");
+      //     }else {
+
+      //       for (i= x; i<=y; i++ ) {
+
+      //         console.log(i);
+      //       }
+
+      //     }
+
+      // }
+      // }
+    </script>
+  </head>
+  <body>
+    
+  </body>
+</html>
