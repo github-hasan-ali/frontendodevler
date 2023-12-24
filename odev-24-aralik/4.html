@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soru 4</title>
+  <script>
+    
+            do {
+          var x = parseFloat(prompt("1. sayi"));
+          if (isNaN(x)) {
+            console.log("Geçerli bir sayı giriniz");
+          }
+        } while (isNaN(x));
+        do {
+          var y = parseFloat(prompt("2. sayi"));
+          if (isNaN(y)) {
+            console.log("Geçerli bir sayı giriniz");
+          }
+        } while (isNaN(y));
+        do {
+          var z = parseFloat(prompt("3. sayi"));
+          if (isNaN(z)) {
+            console.log("Geçerli bir sayı giriniz");
+          }
+        } while (isNaN(z));
+          // if (x<y && y<z){
+          //   document.write("ortanca sayi", y)
+          // } else if (x<y && x<z) {
+          //   document.write("ortanca sayi", x)
+          // }
+
+          if (x<y)
+          {
+            if(y<z) {
+              document.write("ortanca sayi", y)
+            } else if(x<z){
+              document.write("ortanca sayi", z)
+            }
+          } else if(x<z){
+            document.write("ortanca sayi", x)
+          } else if(y<z){
+            document.write("ortanca sayi", z)
+          } else {
+            document.write("ortanca sayi", y)
+          }
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
