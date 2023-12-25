@@ -1,0 +1,34 @@
+<!-- 5-Klavyeden girilen A ve B gibi iki sayının bölme işlemi kullanmadan sadece toplama ve çıkarma kullanarak kalanlı bölme yapan algoritmayı ve js kodunu yazınız. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5.Soru</title>
+    <script>
+      // 6-Klavyeden girilen A ve B gibi iki sayıyı, çarpma işlemi kullanmadan sadece toplama ve çıkarma kullanarak çarpıp sonucu ekrana yazan algoritmayı ve js kodunu yazınız.
+      do {
+        var x = parseFloat(prompt("1. sayi"));
+        if (isNaN(x)) {
+          console.log("Geçerli bir sayı giriniz");
+        }
+      } while (isNaN(x));
+      do {
+        var y = parseFloat(prompt("2. sayi"));
+        if (isNaN(y)) {
+          console.log("Geçerli bir sayı giriniz");
+        }
+      } while (isNaN(y));
+      var total = x;
+      var bolum=0;
+      while (x >= y) {
+        x = x - y;
+        bolum++;
+    }
+      document.write(bolum , "kalan", x)
+      // document.write(bolum);
+
+    </script>
+  </head>
+  <body></body>
+</html>
