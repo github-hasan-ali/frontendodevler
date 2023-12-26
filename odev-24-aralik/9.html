@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>9.html</title>
+    <script>
+      //9-Klavyeden girilecek iki pozitif tam sayının OBEB (Ortak Bölenlerin En Büyüğü)’ini bulacak algoritmayı ve js kodunu yazınız. Örneğin elimizde 3654 ve 1365 değerleri olsun. Bu değerlerin OBEB’i şu şekilde bulunmaktadır.
+      do {
+        var x = parseFloat(prompt("1. sayi"));
+        if (isNaN(x)) {
+          console.log("Geçerli bir sayı giriniz");
+        }
+      } while (isNaN(x));
+      do {
+        var y = parseFloat(prompt("2. sayi"));
+        if (isNaN(y)) {
+          console.log("Geçerli bir sayı giriniz");
+        }
+      } while (isNaN(y));
+      var sonuc1 = 1,
+        sonuc2 = 1;
+        
+
+        while (sonuc2 != 0) {
+         
+          sonuc2 = parseFloat(y % x) ;
+          x = x - 1;
+          document.write(x);
+        }
+      // if (x < y) {
+      //   while (sonuc1 != 0 && sonuc2 != 0) {
+      //     sonuc1 = parseFloat(x % x) ;
+      //     sonuc2 = parseFloat(y % x) ;
+      //     x = x - 1;
+        
+      //     document.write(x);
+      //   }
+      // } else {
+      //   while (sonuc1 != 0 && sonuc2 != 0) {
+      //     sonuc1 = parseFloat(y % y);
+      //     sonuc2 = parseFloat(x % y);
+      //     y = y - 1;
+      //     document.write(y);
+      //   }
+      // }
+    </script>
+  </head>
+  <body></body>
+</html>

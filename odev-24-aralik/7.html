@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7.Soru</title>
+    <script>
+      // 7- Sıfır –0 girilinceye kadar klavyeden okutulan değerlerin ortalamasını hesaplayıp ekrana yazan algoritmayı ve js kodunu yazınız.
+
+      do {
+        var x = parseFloat(
+          prompt("Bir sayı giriniz. 0 girene kadar ortalama hesapla")
+        );
+        if (isNaN(x)) {
+          console.log("Geçerli bir sayı giriniz");
+        }
+      } while (isNaN(x));
+
+      var total = 0;
+      var sayiMiktar = 1;
+      var ortalama = 0;
+
+      while (x != 0) {
+      
+        total = total + x;
+        ortalama = total/sayiMiktar;
+        sayiMiktar=sayiMiktar+1;
+        do {
+          var x = parseInt(
+            prompt("Bir sayı giriniz. 0 girene kadar ortalama hesapla")
+          );
+          if (isNaN(x)) {
+            console.log("Geçerli bir sayı giriniz");
+          }
+        } while (isNaN(x));
+        
+      }
+      document.write(ortalama)
+    </script>
+  </head>
+  <body></body>
+</html>
